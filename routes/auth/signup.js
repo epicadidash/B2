@@ -5,7 +5,7 @@ var crypto = require("crypto"); //importing crypto package
 const database = require("../../database/database"); //database module imported
 const x = crypto
   .createHash("sha512")
-  .update("note-ashish-adwait-plus")
+  .update("notex")
   .digest("hex"); //using crypto hash module
 var con = database.con; //database connector imported
 con.connect((err) => {
